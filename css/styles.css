@@ -1,0 +1,202 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+header{
+    padding-top: 0.5em;
+    height: 25vh;
+    background-image: url('../assets/images/pattern-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+header h1{
+    color: whitesmoke;
+    font-size: 1.75em;
+}
+#searchBarDiv{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    border-radius: 5px;
+    width: 30%;
+}
+#searchBar{
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding: 0.75em 1em;
+    width: 100%;
+}
+#searchBarDiv i{
+    color: white;
+    padding: 0.25em 1em;
+    font-size: 1.25em;
+    cursor: pointer;
+}
+#searchBarDiv i:hover{
+    color: rgb(66, 66, 226);
+}
+
+#resultSection{
+    position: absolute;
+    top: 17.5%;
+    left: 10%;
+    background-color: white;
+    width: 80%;
+    /* height: 20vh; */
+    z-index: 99999999;
+    border-radius: 10px;
+    padding: 2em 0em;
+}
+#resultSection .details{
+    text-align: left;
+    padding-left: 1em;
+    border-right: 1px solid black;
+}
+#resultSection #isp{
+    border-right: none;
+}
+#resultSection .details div:first-child{
+    font-size: 0.75em;
+    font-weight: bold;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 0.5em;
+}
+#resultSection .details div:last-child{
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 1em;
+    color: hsl(0, 0%, 17%);
+    word-break: normal;
+}
+#mapDisplay{
+    height: 70vh;
+}
+footer{
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .attribution { 
+    font-size: 1em; 
+    text-align: center; 
+}
+footer .attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media all and (min-width: 320px) and (max-width:480px){
+    
+header{
+    padding-top: 0.75em;
+    height: 35vh;
+}
+header h1{
+    font-size: 1.75em;
+    margin-bottom: 0.5em;
+}
+#searchBarDiv{
+    width: 90%;
+}
+#searchBar{
+    padding: 0.75em 0.5em;
+    width: 100%;
+}
+#searchBarDiv i{
+    padding: 0.25em 1em;
+    font-size: 1.25em;
+}
+
+#resultSection{
+    position: absolute;
+    top: 20%;
+    left: 6.75%;
+    width: 95%;
+    padding: 1em 0em;
+}
+#resultSection .details{
+    text-align: center;
+    margin-bottom: 0.5em;
+    border: none;
+}
+#resultSection #isp{
+    border-right: none;
+}
+#resultSection .details div:first-child{
+    font-size: 0.625em;
+}
+#resultSection .details div:last-child{
+    font-size: 1.25em;
+}
+#mapDisplay{
+    height: 60vh;
+}
+footer{
+    height: 5vh;
+}
+footer .attribution { 
+    font-size: 0.825em; 
+}
+}
+
+@media all and (min-width: 481px) and (max-width:768px){
+    
+    header{
+        padding-top: 1em;
+        height: 20vh;
+    }
+    header h1{
+        font-size: 1.75em;
+        margin-bottom: 0.5em;
+    }
+    #searchBarDiv{
+        width: 60%;
+    }
+    #searchBar{
+        padding: 0.75em 0.5em;
+        width: 100%;
+    }
+    #searchBarDiv i{
+        padding: 0.25em 1em;
+        font-size: 1.25em;
+    }
+    
+    #resultSection{
+        position: absolute;
+        top: 15%;
+        left: 9.5%;
+        width: 85%;
+        padding: 1.25em 0em;
+    }
+    #resultSection .details{
+        text-align: center;
+        margin-bottom: 0.5em;
+    }
+    #resultSection #isp{
+        border-right: none;
+    }
+    #resultSection .details div:first-child{
+        font-size: 0.75em;
+    }
+    #resultSection .details div:last-child{
+        font-size: 1.375em;
+    }
+    #mapDisplay{
+        height: 75vh;
+    }
+    footer{
+        height: 5vh;
+    }
+    footer .attribution { 
+        font-size: 1em; 
+    }
+}
